@@ -1,0 +1,19 @@
+[package]
+name = "ary-clock"
+version = "1.0.0"
+authors = ["jlvertol"]
+edition = "2018"
+
+[dependencies]
+chrono = "^0.4"
+crossterm = "0.12"
+
+[dependencies.rodio]
+version = "^0.8"
+features = ["wav"]
+default-features = false
+
+[dependencies.cursive]
+version = "0.12"
+features = ["crossterm-backend"]
+default-features = false
