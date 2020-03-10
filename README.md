@@ -22,6 +22,8 @@ To compile and run the application you need to have Rust and Cargo installed. On
 
 If it succeeds, you will be presented with an ncurses-style small blue rectangle with the time on the header.
 
+<img src="images/ary-clock-empty-screenshot.png" />
+
 Usage
 -----
 
@@ -32,6 +34,8 @@ Usage
 * To remove an alarm, type its number again.
 * To create an alarm that plays the alternate file `soundalarm2.wav`, type `*` followed by your two-digit number.
 * Those alarms can also be removed simply by typing their number again (no need to write down `*`)
+
+<img src="images/ary-clock-with-alarms-screenshot.png" />
 
 Removing and adding alarms might be a bit fiddly at first, since there's no visual feedback for when you have written one digit and the system is still waiting for the second one, but you gets used to it.
 
