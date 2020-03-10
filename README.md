@@ -37,7 +37,7 @@ Usage
 
 <img src="images/ary-clock-with-alarms-screenshot.png" />
 
-Removing and adding alarms might be a bit fiddly at first, since there's no visual feedback for when you have written one digit and the system is still waiting for the second one, but you gets used to it.
+Removing and adding alarms might be a bit fiddly at first, since there's no visual feedback for when you have written one digit and the system is still waiting for the second one, but you get used to it.
 
 Platforms
 ---------
