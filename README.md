@@ -11,14 +11,14 @@ On Linux, this application uses the ALSA sound system through the `alsa-sys` cra
 
 `apt-get install libasound2-dev` on Debian/Ubuntu
 
-The released binary file on ary-clock-releases/1.0.0/x86_64-linux-gnu was compiled dynamically against ALSA so it will crash when it tries to play an alarm if you don't have it installed (sorry), in order to be able to run that binary, installing `libasound2` on Debian/Ubuntu or `alsa-lib` on Fedora should suffice.
+The released binary file on ary-clock-releases/1.0.0/x86_64-linux-gnu was linked dynamically against ALSA so it will crash when it tries to play an alarm if you don't have it installed (sorry), in order to be able to run that binary, installing `libasound2` on Debian/Ubuntu or `alsa-lib` on Fedora should suffice.
 
 If the binary file for ARM-Linux crashes when playing an alarm, same thing, install `libasound2` on Debian/Ubuntu or `alsa-lib` on Fedora.
 
 Compiling and Running
 ---------------------
 
-To compile and run the application you need to have Rust and Cargo installed. Once both are installed in your system, clone this project, navigate to the root folder, and execute `cargo run` in the terminal. That will compile the application the first time, and subsequently run it.
+To compile and run the application you need to have Rust and Cargo installed. Once both are installed in your system, clone this project, navigate to the root folder, and execute `cargo run` in the terminal. That will compile the application the first time, and subsequently run it. To separate both steps, use `cargo build` first, and then `cargo run`.
 
 If it succeeds, you will be presented with an ncurses-style small blue rectangle with the time on the header.
 
