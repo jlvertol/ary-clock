@@ -15,10 +15,14 @@ The released binary file on ary-clock-releases/1.0.0/x86_64-linux-gnu was linked
 
 If the binary file for ARM-Linux crashes when playing an alarm, same thing, install `libasound2` on Debian/Ubuntu or `alsa-lib` on Fedora.
 
+To compile and run the application you need to have Rust and Cargo installed.
+
 Compiling and Running
 ---------------------
 
-To compile and run the application you need to have Rust and Cargo installed. Once both are installed in your system, clone this project, navigate to the root folder, and execute `cargo run` in the terminal. That will compile the application the first time, and subsequently run it. To separate both steps, use `cargo build` first, and then `cargo run`.
+One the requirements are satisfied, clone this project, navigate to the root folder, and execute `cargo run` in the terminal. That will compile the application the first time, and subsequently run it.
+
+To separate both steps, use `cargo build` first, and then `cargo run`.
 
 If it succeeds, you will be presented with an ncurses-style small blue rectangle with the time on the header.
 
