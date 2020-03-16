@@ -20,11 +20,26 @@ To compile and run the application you need to have Rust and Cargo installed.
 Compiling and Running
 ---------------------
 
-One the requirements are satisfied, clone this project, navigate to the root folder, and execute `cargo run` in the terminal. That will compile the application the first time, and subsequently run it.
+Once the requirements are satisfied, clone this project and navigate to the project's base folder.
 
-To separate both steps, use `cargo build` first, and then `cargo run`.
+To build the application, use:
+```
+cargo build
+```
 
-If it succeeds, you will be presented with an ncurses-style small blue rectangle with the time on the header.
+That will compile it alongside its required libraries and link everything necessary for it to run, and fail if any requirement is missing (see the section above).
+
+To run the application, use:
+```
+cargo run
+```
+
+By default Cargo builds Rust applications in debug mode, if you want the clock to be built for a production environment (like a small embedded system), do:
+```
+cargo build --release
+```
+
+If `cargo run` succeeds, you will be presented with an ncurses-style small blue rectangle with the time on the header, like this:
 
 <img src="images/ary-clock-empty-screenshot.png" />
 
