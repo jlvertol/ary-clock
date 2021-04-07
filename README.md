@@ -17,6 +17,8 @@ If the binary file for ARM-Linux crashes when playing an alarm, same thing, inst
 
 To compile and run the application you need to have Rust and Cargo installed.
 
+**If you use prebuilt binaries, you must download the .wav files soundalarm.wav and soundalarm2.wav to the same directory as the program, or it will crash when you try to play an alarm**
+
 Compiling and Running
 ---------------------
 
